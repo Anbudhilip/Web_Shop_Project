@@ -1,0 +1,132 @@
+﻿
+
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="admin.master.cs" Inherits="CAR_RENTAL_WEBSITE.Admin.admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Content/bootstrap.css" rel="stylesheet" />
+     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/admin.css" rel="stylesheet" />
+    <link href="../Content/admin.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <style>
+        a{
+            font-size:larger;
+        }
+
+    </style>
+</head>
+    <body>  
+
+         <form runat="server">               
+<div class="container-fluid">
+    <div class="row flex-nowrap">
+        <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+            <div class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+                <a href="Dashboard.aspx" class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                 <h2>  <span class="fs-5 d-none d-sm-inline">Pharmacy Shop</span></h2> 
+                </a>
+                <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start" id="menu">
+
+                      <li>
+                     <h3><asp:Label ID="name" runat="server" Text="Label"></asp:Label></h3>
+                    </li> 
+                     <li>
+                        <a href="../Login.aspx" class="nav-link px-0 align-middle">
+                          <i class="bi bi-person-square"></i>  Logout</a>
+                    </li>
+                    
+                    <li class="nav-item mt-3  ">
+                        <a href="Dashboard.aspx" class="nav-link align-middle px-0 ">
+                       <i class="bi bi-menu-button-wide-fill"></i> Dashboard
+                        </a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a href="ChangePassword.aspx" class="nav-link align-middle px-0">
+                                         
+                        
+                        </a>
+                        
+                    </li>
+                    <li class="nav-item">  
+                    <a href="ChangePassword.aspx" class="nav-link align-middle px-0">
+                          <i class="bi bi-bricks"></i>Change Password
+                        </a>
+                        </li>
+    
+                     <li class="nav-item">
+                        <a href="AddCategories.aspx" class="nav-link align-middle px-0">
+                          <i class="bi bi-stickies"></i>  Add Categories
+                        </a>
+                    </li>
+                
+                    <li>
+                        <a href="AddMedicines.aspx" class="nav-link px-0 align-middle">
+                        <i class="bi bi-bandaid"></i>   Add Medicines</a>
+                    </li>
+                     <li>
+                        <a href="NewSeller.aspx" class="nav-link px-0 align-middle">
+                         <i class="bi bi-person-gear"></i>  Add New Seller</a>
+                    </li>
+                     <li>
+                        <a href="categoryDetails.aspx" class="nav-link px-0 align-middle">
+                         <i class="bi bi-floppy2-fill"></i>  Category Details</a>
+                    </li>
+                      <li>
+                        <a href="StockDetails.aspx" class="nav-link px-0 align-middle">
+                          <i class="bi bi-bookmark-star"></i>  Stock Details</a>
+                    </li>
+                      <li>
+                        <a href="SellersDetails.aspx" class="nav-link px-0 align-middle">
+                         <i class="bi bi-person-check"></i> Seller Details</a>
+                    </li>
+                        <li>
+                        <a href="PurchaseDetails.aspx" class="nav-link px-0 align-middle">
+                           <i class="bi bi-cash-coin"></i> Purchase Details</a>
+                    </li>
+                   
+    
+                     <li>
+                        <a href="#" class="nav-link px-0 align-middle">
+                          <i class="bi bi-person-square"></i>  Customer Feedback</a>
+                    </li>
+                          <li>
+                        <a href="../Home.aspx" class="nav-link px-0 align-middle">
+                           <i class="bi bi-cash-coin"></i> Home Page</a>
+                    </li>
+                </ul>
+               
+            </div>
+        </div>              
+           
+        <div class="col py-3">
+       
+         <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+
+
+                    </asp:ContentPlaceHolder>
+  
+        </div>
+    </div>
+</div>
+             </form>
+
+
+
+                
+       
+
+        <script src="../Content/jquery2.js"></script>
+        <script src="../Content/jquery%20confirm.js"></script>
+        <script src="../Content/bootstrap.js"></script>
+</body>
+</html>
